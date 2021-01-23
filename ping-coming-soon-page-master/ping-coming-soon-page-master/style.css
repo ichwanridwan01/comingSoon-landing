@@ -1,0 +1,153 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Libre Franklin", sans-serif;
+}
+
+.container .content-main {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+header {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  text-align: center;
+}
+
+header .bolt {
+  font-weight: 700;
+  color: black;
+}
+
+header h1 {
+  color: hsl(223, 100%, 88%);
+  font-weight: 300;
+}
+
+header h4 {
+  color: gray;
+  font-weight: 300;
+}
+
+header img {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+header input {
+  width: 300px;
+  padding: 10px;
+  border-radius: 20px;
+  border: none;
+  border: 2px solid hsl(223, 100%, 88%);
+}
+
+header input::placeholder {
+  color: hsl(223, 100%, 88%);
+}
+
+header input:focus {
+  outline: none;
+  border: 2px solid hsl(175, 84%, 51%);
+}
+
+header form small {
+  visibility: hidden;
+  display: flex;
+  margin-bottom: 20px;
+}
+
+header form.erorr small {
+  color: red;
+  visibility: visible;
+}
+
+header button {
+  width: 150px;
+  padding: 10px;
+  border-radius: 20px;
+  border: none;
+  background-color: hsl(223, 87%, 63%);
+  color: white;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+header button:focus {
+  outline: none;
+}
+
+.content-main section img {
+  max-width: 750px;
+}
+
+@media (max-width: 320px) {
+  .container .content-main header {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin-left: 15%;
+  }
+
+  .content-main header input {
+    width: 200px;
+  }
+
+  .content-main header button {
+    width: 100px;
+  }
+
+  .content-main section img {
+    max-width: 450px;
+    margin-left: 10%;
+  }
+}
+
+@media (max-width: 500px) {
+  .container .content-main header {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .content-main header input {
+    width: 200px;
+  }
+
+  .content-main header button {
+    width: 100px;
+  }
+
+  .content-main section img {
+    max-width: 450px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container .content-main header {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .content-main header input {
+    width: 200px;
+  }
+
+  .content-main header button {
+    width: 100px;
+  }
+
+  .content-main section img {
+    max-width: 450px;
+  }
+}
